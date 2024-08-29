@@ -1,0 +1,28 @@
+body{
+    background-color: #ffffff;
+}
+
+
+#menu ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.fundo-cinza{
+    background-color: #000000;
+}
+
