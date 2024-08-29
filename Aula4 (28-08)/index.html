@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastro</h1>
+        <form action="/submit" method="post">
+            <label for="username">
+                Usuário:
+                <input type="text" id="username" name="username" required>
+            </label>
+            <label for="password">
+                Senha:
+                <input type="password" id="password" name="password" required>
+            </label>
+            <label for="email">
+                E-mail:
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="birthdate">
+                Data de Nascimento:
+                <input type="date" id="birthdate" name="birthdate" required>
+            </label>
+            <label for="gender">
+                Gênero:
+                <select id="gender" name="gender" required>
+                    <option value="">Selecione...</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Vai Ana</option>
+                </select> 
+            </label>
+            <fieldset>
+                <legend>Delimitador de Áreas</legend>
+                <label for="datalist">
+                    Datalist:
+                    <input type="text" id="datalist" list="lista">
+                    <datalist id="lista">
+                        <option value="Opção 1">
+                        <option value="Opção 2">
+                        <option value="Opção 3">
+                    </datalist>
+                </label>
+            </fieldset><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
